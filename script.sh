@@ -4,7 +4,7 @@ sudo apt update -y;
 sudo apt upgrade -y;
 sudo apt install apache2 mariadb-server mariadb-client php php-gd php-cli php-mysql php-common git  certbot python3-certbot-apache -y;
 
-sudo systemctl enable apache2;
+sudo update-rc.d apache2 enable;
 
 sudo systemctl start mariadb;
 
